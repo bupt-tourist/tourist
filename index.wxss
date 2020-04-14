@@ -1,0 +1,43 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login{
+  background: pink;
+  height: 20rpx;
+  font-size: 20rpx;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  color: white
+}
+.three{
+  display: flex
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  overflow:hidden;
+
+}
+.two{
+  padding-top: 40rpx
+}
+.userinfo-nickname {
+  color: #aaa;
+  
+}
+
+.twochoice {
+  height:20vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+

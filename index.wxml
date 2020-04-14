@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <view class="three">
+      <view>
+      <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      </view>
+      <view class="two">
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <button bindtap="bindViewTap" class="login" style="width:150rpx">登陆</button>
+       </view>
+      </view>
+    </block>
+  </view>
+  <view class="twochoice" >
+    <button class="adminis" style="width:100%" bindtap="bindViewTap">
+    <text decode="{{true}}" >我是管理员--></text>
+    </button>
+    <button class="guide" style="width:100%" bindtap="bindViewTap">
+    <text decode="{{true}}">我是导游-->
+    </text>
+    </button>
+
+  </view>
+</view>
